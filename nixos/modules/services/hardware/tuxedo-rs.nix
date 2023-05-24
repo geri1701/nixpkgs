@@ -22,7 +22,7 @@ in
       systemd = {
         services.tailord = {
           enable = true;
-          description = lib.literalMD "Tuxedo Tailor hardware control service";
+          description = "Tuxedo Tailor hardware control service";
           after = [ "systemd-logind.service" ];
           wantedBy = [ "multi-user.target" ];
 
